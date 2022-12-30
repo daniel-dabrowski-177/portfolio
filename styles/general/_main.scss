@@ -1,0 +1,59 @@
+@font-face {
+  font-family: CONSOLA;
+  src: url(/utilities/fonts/CONSOLA.ttf);
+}
+
+// Widths
+$mobile: 375px;
+$mobile-L: 425px;
+$tablet: 768px;
+$laptop: 1024px;
+$desktop: 1440px;
+
+* {
+  font-family: CONSOLA;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+  background-color: $clr-bg;
+  margin: auto;
+}
+
+main {
+  max-width: $desktop;
+  margin: 0 24px;
+}
+
+.title {
+  margin: 20px 0 0 0;
+  color: $clr-accent;
+}
+
+@media (min-width: $mobile) {
+  main {
+    margin: 0 50px;
+  }
+}
+
+@media (min-width: $tablet) {
+  main {
+    margin: 0 100px;
+  }
+
+  body {
+    background-image: url(/assets/images/camal.png);
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 15%;
+  }
+}
+
+@media (min-width: $desktop) {
+  main {
+    width: 100%;
+    margin: auto;
+  }
+}
