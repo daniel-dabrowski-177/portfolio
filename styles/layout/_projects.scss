@@ -2,7 +2,6 @@
   max-width: $desktop;
   .project {
     margin: 20px auto 80px;
-    // border-bottom: 2px solid $clr-bg-dark;
 
     .open-project {
       width: 100%;
@@ -19,26 +18,26 @@
         align-items: center;
         z-index: 5;
 
-        .paragraph {
-          color: $clr-text;
-          font-weight: 700;
-          font-size: var(--fz-22);
-        }
-
         .size-bg {
+          width: 40px;
+          height: 40px;
           display: flex;
           justify-content: center;
           align-items: center;
           border-radius: 12px;
-          width: 60px;
-          height: 60px;
           margin: 0 0 0 10px;
           background-color: $clr-bg-dark;
 
           img {
-            width: 50px;
-            height: 50px;
+            width: 32px;
+            height: 32px;
           }
+        }
+
+        .paragraph {
+          color: $clr-text;
+          font-weight: 700;
+          font-size: var(--fz-18);
         }
       }
     }
@@ -131,6 +130,16 @@
       display: flex;
     }
     .project {
+      .open-project {
+        .project-hover-mobile {
+          position: absolute;
+          bottom: 70px;
+          right: 30px;
+          display: flex;
+          align-items: center;
+          z-index: 5;
+        }
+      }
       .project-title {
         font-size: var(--fz-22);
       }
@@ -166,6 +175,25 @@
       .open-project {
         .project-hover-mobile {
           display: none;
+          bottom: 35px;
+
+          a {
+            .size-bg {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 12px;
+              width: 60px;
+              height: 60px;
+              margin: 0 0 0 10px;
+              background-color: $clr-bg-dark;
+
+              img {
+                width: 50px;
+                height: 50px;
+              }
+            }
+          }
         }
         .project-title {
           margin: 20px auto;

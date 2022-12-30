@@ -383,13 +383,9 @@ main {
   z-index: 5;
 }
 
-.projects .project .open-project .project-hover-mobile .paragraph {
-  color: #ffffff;
-  font-weight: 700;
-  font-size: var(--fz-22);
-}
-
 .projects .project .open-project .project-hover-mobile .size-bg {
+  width: 40px;
+  height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -400,15 +396,19 @@ main {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 12px;
-  width: 60px;
-  height: 60px;
   margin: 0 0 0 10px;
   background-color: #0b1523;
 }
 
 .projects .project .open-project .project-hover-mobile .size-bg img {
-  width: 50px;
-  height: 50px;
+  width: 32px;
+  height: 32px;
+}
+
+.projects .project .open-project .project-hover-mobile .paragraph {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: var(--fz-18);
 }
 
 .projects .project .project-image {
@@ -505,6 +505,18 @@ main {
     display: -ms-flexbox;
     display: flex;
   }
+  .projects .project .open-project .project-hover-mobile {
+    position: absolute;
+    bottom: 70px;
+    right: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 5;
+  }
   .projects .project .project-title {
     font-size: var(--fz-22);
   }
@@ -529,6 +541,27 @@ main {
   }
   .projects .project .open-project .project-hover-mobile {
     display: none;
+    bottom: 35px;
+  }
+  .projects .project .open-project .project-hover-mobile a .size-bg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 12px;
+    width: 60px;
+    height: 60px;
+    margin: 0 0 0 10px;
+    background-color: #0b1523;
+  }
+  .projects .project .open-project .project-hover-mobile a .size-bg img {
+    width: 50px;
+    height: 50px;
   }
   .projects .project .open-project .project-title {
     margin: 20px auto;
