@@ -26,10 +26,16 @@
     display: none;
     list-style: none;
     color: white;
+
     li {
-      width: 12ch;
       cursor: pointer;
       text-align: left;
+    }
+
+    li:hover {
+      color: $clr-accent;
+      font-weight: bold;
+      border-bottom: 2px solid $clr-accent;
     }
   }
   .active {
@@ -80,7 +86,7 @@
     margin: 0;
     .ul {
       display: flex;
-      gap: 40px;
+      gap: 12ch;
     }
     .menu {
       display: none;
