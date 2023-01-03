@@ -2,6 +2,7 @@
   max-width: $desktop;
   .project {
     margin: 20px auto 50px;
+    border-bottom: 4px solid $clr-bg-dark;
 
     .open-project {
       width: 100%;
@@ -64,6 +65,8 @@
     }
 
     .details {
+      margin: 0 0 35px 0;
+
       .icons-container {
         display: flex;
         gap: 20px;
@@ -235,7 +238,7 @@
         margin: 20px 0 0 0;
       }
       .details {
-        margin: 0 0 0 100px;
+        margin: 0 0 50px 100px;
 
         .title:nth-of-type(1) {
           margin: 0;
