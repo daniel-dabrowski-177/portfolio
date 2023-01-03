@@ -170,7 +170,6 @@
 @media (min-width: $tablet) {
   .projects {
     margin: 20px auto 130px;
-
     .project {
       .open-project {
         .project-hover-mobile {
@@ -208,6 +207,7 @@
         }
         .project-image {
           img {
+            transition: opacity 0.2s ease-in;
             opacity: 0.25;
           }
         }

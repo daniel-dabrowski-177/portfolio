@@ -1,9 +1,8 @@
 .nav {
-  max-width: $desktop;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 30px auto 0;
+  margin: 0 auto;
   padding: 30px 24px;
   position: fixed;
   background-color: $clr-bg;
@@ -96,6 +95,6 @@
 
 @media (min-width: $desktop) {
   .nav {
-    max-width: none;
+    width: $desktop;
   }
 }

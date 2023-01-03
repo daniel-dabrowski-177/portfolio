@@ -3,7 +3,7 @@ let nav = document.querySelector(".nav");
 let ul = document.querySelector(".ul");
 let menu = document.querySelector(".menu");
 let logo = document.querySelector(".logo");
-let projects = document.querySelector(".projects");
+let resume = document.querySelector(".resume");
 let footer = document.querySelector(".footer");
 let isOpen = false;
 
@@ -28,22 +28,29 @@ menu.addEventListener("click", () => {
 
 // About click handler
 ul.children[0].addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    left: 0,
+  isOpen = false;
+  ul.classList.remove("active");
+  body.style.overflow = "scroll";
+  body.scrollIntoView({
     behavior: "smooth",
   });
 });
 
 // Projects click handler
 ul.children[1].addEventListener("click", () => {
-  projects.scrollIntoView({
+  isOpen = false;
+  ul.classList.remove("active");
+  body.style.overflow = "scroll";
+  resume.scrollIntoView({
     behavior: "smooth",
   });
 });
 
 // Contact click handler
 ul.children[2].addEventListener("click", () => {
+  isOpen = false;
+  ul.classList.remove("active");
+  body.style.overflow = "scroll";
   footer.scrollIntoView({
     behavior: "smooth",
   });
