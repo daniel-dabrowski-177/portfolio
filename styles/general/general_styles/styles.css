@@ -394,7 +394,7 @@ main {
 
 .projects .project {
   margin: 20px auto 50px;
-  border-bottom: 4px solid #0b1523;
+  border-bottom: 5px solid #0b1523;
 }
 
 .projects .project .open-project {
