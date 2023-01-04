@@ -7,6 +7,14 @@ let resume = document.querySelector(".resume");
 let footer = document.querySelector(".footer");
 let isOpen = false;
 
+let menuClose = () => {
+  menu.children[0].attributes[0].textContent = "./assets/icons/burger.svg";
+  logo.style.visibility = "visible";
+  ul.classList.remove("active");
+  body.style.overflow = "scroll";
+  isOpen = false;
+};
+
 // Burger click handler
 menu.addEventListener("click", () => {
   if (!isOpen) {
@@ -18,19 +26,13 @@ menu.addEventListener("click", () => {
     body.style.overflow = "hidden";
     isOpen = true;
   } else {
-    menu.children[0].attributes[0].textContent = "./assets/icons/burger.svg";
-    logo.style.visibility = "visible";
-    ul.classList.remove("active");
-    body.style.overflow = "scroll";
-    isOpen = false;
+    menuClose();
   }
 });
 
 // About click handler
 ul.children[0].addEventListener("click", () => {
-  isOpen = false;
-  ul.classList.remove("active");
-  body.style.overflow = "scroll";
+  menuClose();
   body.scrollIntoView({
     behavior: "smooth",
   });
@@ -38,9 +40,7 @@ ul.children[0].addEventListener("click", () => {
 
 // Projects click handler
 ul.children[1].addEventListener("click", () => {
-  isOpen = false;
-  ul.classList.remove("active");
-  body.style.overflow = "scroll";
+  menuClose();
   resume.scrollIntoView({
     behavior: "smooth",
   });
@@ -48,9 +48,7 @@ ul.children[1].addEventListener("click", () => {
 
 // Contact click handler
 ul.children[2].addEventListener("click", () => {
-  isOpen = false;
-  ul.classList.remove("active");
-  body.style.overflow = "scroll";
+  menuClose();
   footer.scrollIntoView({
     behavior: "smooth",
   });

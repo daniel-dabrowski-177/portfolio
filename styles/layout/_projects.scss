@@ -3,6 +3,7 @@
   .project {
     margin: 20px auto 50px;
     border-bottom: 5px solid $clr-bg-dark;
+    width: 100%;
 
     .open-project {
       width: 100%;
@@ -10,6 +11,10 @@
       z-index: 4;
       position: relative;
       max-width: 720px;
+
+      .project-image {
+        width: calc(100% + 48px);
+      }
 
       .project-hover-mobile {
         position: absolute;
@@ -111,13 +116,15 @@
 @media (min-width: $mobile) {
   .projects {
     .project {
-      .project-image {
-        width: 100%;
-        margin: auto;
-        border-radius: 6px;
-
-        img {
+      .open-project {
+        .project-image {
+          width: 100%;
+          margin: auto;
           border-radius: 6px;
+
+          img {
+            border-radius: 6px;
+          }
         }
       }
     }
