@@ -36,6 +36,7 @@ ul.children[0].addEventListener("click", () => {
   body.scrollIntoView({
     behavior: "smooth",
   });
+  body.style.overflowX = "hidden";
 });
 
 // Projects click handler
@@ -44,6 +45,7 @@ ul.children[1].addEventListener("click", () => {
   resume.scrollIntoView({
     behavior: "smooth",
   });
+  body.style.overflowX = "hidden";
 });
 
 // Contact click handler
@@ -52,4 +54,5 @@ ul.children[2].addEventListener("click", () => {
   footer.scrollIntoView({
     behavior: "smooth",
   });
+  body.style.overflowX = "hidden";
 });
