@@ -30,15 +30,13 @@ main {
   margin: 0 24px;
 }
 
-.title {
-  margin: 20px 0 0 0;
+i {
   color: #37b7ff;
 }
 
-@media (min-width: 375px) {
-  main {
-    margin: 0 50px;
-  }
+.title {
+  margin: 20px 0 0 0;
+  color: #37b7ff;
 }
 
 @media (min-width: 768px) {
