@@ -1,9 +1,24 @@
 .nav {
+  .nav-container {
+    width: $desktop;
+    margin: 0 auto;
+    padding: 1.5rem 1.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    .logo {
+      margin: 1.5625rem 0 0 0;
+    }
+    .ul {
+      li {
+        margin: 1.5625rem 0 0 0;
+      }
+    }
+  }
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  padding: 30px 24px;
   position: fixed;
   background-color: $clr-bg;
   z-index: 100;
@@ -12,15 +27,22 @@
   .logo {
     img {
       cursor: pointer;
-      min-width: 48px;
-      min-height: 48px;
+      min-width: 3rem;
+      min-height: 3rem;
     }
     .logo-name {
       color: $clr-text;
-      margin: -10px;
+      margin: -0.625rem;
       text-align: center;
     }
   }
+
+  .logo:hover {
+    padding: 0.625rem 0.625rem 1.25rem;
+    background-color: $clr-accent;
+    border-radius: 0.9375rem;
+  }
+
   .ul {
     display: none;
     list-style: none;
@@ -34,17 +56,19 @@
     li:hover {
       color: $clr-accent;
       font-weight: bold;
-      border-bottom: 2px solid $clr-accent;
+      border-bottom: 0.125rem solid $clr-accent;
+      transition: all 1s ease;
     }
   }
   .active {
     display: flex;
+    align-items: center;
     padding: 0;
     flex-direction: column;
     position: absolute;
-    top: -50px;
+    top: -3.125rem;
     left: 0;
-    gap: 50px;
+    gap: 2.5rem;
     color: $clr-accent;
     font-size: var(--fz-22);
     font-weight: bold;
@@ -52,28 +76,34 @@
     height: 110vh;
     z-index: 15;
     background-color: $clr-bg-dark;
+    border-left: 0.375rem solid $clr-accent;
 
     li {
-      margin: 0 0 0 24px;
+      padding: 0 0 0 1.5rem;
+      display: flex;
+      justify-content: center;
+      text-transform: uppercase;
+      letter-spacing: 0.1875rem;
     }
 
     li:first-of-type {
-      margin: 125px 0 0 24px;
+      margin: 12.5rem 0 0 0;
     }
   }
   .menu {
     z-index: 15;
+    display: flex;
+    align-items: center;
   }
 }
 
 @media (min-width: $mobile) {
   .nav {
-    padding: 30px 50px;
-    margin: 0;
-
-    .ul {
-      .li {
-        margin: 0 0 0 24px;
+    .nav-container {
+      .ul {
+        .li {
+          margin: 0 0 0 1.5rem;
+        }
       }
     }
   }
@@ -81,20 +111,16 @@
 
 @media (min-width: $tablet) {
   .nav {
-    padding: 30px 100px;
-    margin: 0;
-    .ul {
-      display: flex;
-      gap: 12ch;
-    }
-    .menu {
-      display: none;
-    }
-  }
-}
+    .nav-container {
+      padding: 1.5rem 3.125rem 0;
 
-@media (min-width: $desktop) {
-  .nav {
-    width: $desktop;
+      .ul {
+        display: flex;
+        gap: 12ch;
+      }
+      .menu {
+        display: none;
+      }
+    }
   }
 }

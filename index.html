@@ -11,36 +11,38 @@
   </head>
   <body>
     <nav class="nav">
-      <div class="logo">
-        <img src="./assets/icons/logo.svg" alt="logo" />
-        <h6 class="logo-name">.Caster</h6>
-      </div>
-      <ul class="ul">
-        <li>About</li>
-        <li>Projects</li>
-        <li>Contact</li>
-      </ul>
-      <div class="menu">
-        <img
-          src="./assets/icons/burger.svg"
-          alt="menu"
-          width="24px"
-          height="24px"
-        />
+      <div class="nav-container">
+        <div class="logo fade-in">
+          <img src="./assets/icons/logo.svg" alt="logo" />
+          <h6 class="logo-name">.Caster</h6>
+        </div>
+        <ul class="ul">
+          <li class="fade-in">About</li>
+          <li class="fade-in">Projects</li>
+          <li class="fade-in">Contact</li>
+        </ul>
+        <div class="menu">
+          <img
+            src="./assets/icons/burger.svg"
+            alt="menu"
+            width="24px"
+            height="24px"
+          />
+        </div>
       </div>
     </nav>
     <main>
       <section class="about">
-        <p class="greetings">Hello,</p>
-        <p class="greetings">I’m Daniel Dąbrowski</p>
-        <h1 class="h1">Frontend</h1>
-        <div class="header">
+        <p class="greetings slide-in-left">Hello,</p>
+        <p class="greetings slide-in-left">I’m Daniel Dąbrowski</p>
+        <h1 class="h1 slide-in-left">Frontend</h1>
+        <div class="header slide-in-left">
           <h1 class="h1">Web</h1>
           <h1 class="h1 highlight">Developer</h1>
         </div>
-        <p class="title">About me:</p>
-        <p class="paragraph gray">Hello there,</p>
-        <p class="paragraph text">
+        <p class="title slide-in-right">About me:</p>
+        <p class="paragraph gray slide-in-right"></p>
+        <p class="paragraph text slide-in-right">
           . I am an engineer at the
           <i><b>Cracow University of Technology</b></i> with a passion for
           coding.
@@ -55,7 +57,7 @@
           . My goal is to <i><b>learn and explore</b></i> web technologies in
           order to work on large and more complex projects in the future.
         </p>
-        <div class="resume">
+        <div class="resume slide-in-right">
           <a
             target="_blank"
             href="https://github.com/daniel-dabrowski-177/daniel-dabrowski-177/blob/main/CV_Daniel_Dąbrowski_EN.pdf"
@@ -64,7 +66,7 @@
             <h2 class="h2">My Resume</h2>
           </a>
         </div>
-        <div class="check-out">
+        <div class="check-out slide-in-right">
           <p class="paragraph">Check out my projects!</p>
           <img src="/assets/icons/round-icon.svg" alt="round-arrow" />
         </div>
@@ -73,6 +75,7 @@
           <img
             src="/assets/images/undraw_programming_re_kg9v.svg"
             alt="programmist"
+            class="slide-in-left"
           />
         </div>
       </section>
@@ -80,7 +83,7 @@
         <p class="title">My Projects:</p>
 
         <!-- Portfolio Project -->
-        <div class="project">
+        <div class="project fade-in">
           <div class="open-project">
             <div class="project-hover-mobile">
               <p class="paragraph">Go to project -></p>
@@ -101,22 +104,25 @@
             </div>
             <h3 class="project-title">Portfolio Project</h3>
           </div>
-          <div class="details">
+          <div class="details slide-in-right">
             <div class="title">technologies:</div>
             <div class="icons-container">
               <img
+                class="tech-icon"
                 src="/assets/icons/html5.svg"
                 alt="html5"
                 width="42px"
                 height="42px"
               />
               <img
+                class="tech-icon"
                 src="/assets/icons/javascript.svg"
                 alt="javascript"
                 width="42px"
                 height="42px"
               />
               <img
+                class="tech-icon"
                 src="/assets/icons/sass.svg"
                 alt="css3"
                 width="42px"
@@ -128,6 +134,7 @@
                 <div class="title">platform:</div>
                 <div class="icons-container">
                   <img
+                    class="tech-icon"
                     src="/assets/icons/netlify.svg"
                     alt="netlify"
                     width="42px"
@@ -139,6 +146,7 @@
                 <div class="title">source code:</div>
                 <div class="icons-container">
                   <img
+                    class="tech-icon"
                     src="/assets/icons/github-1.svg"
                     alt="github"
                     width="42px"
@@ -172,7 +180,7 @@
         </div>
 
         <!-- .Caster Blog Fullstack App -->
-        <div class="project">
+        <div class="project fade-in">
           <div class="open-project">
             <div class="project-hover-mobile">
               <p class="paragraph">Go to project -></p>
@@ -193,28 +201,32 @@
             </div>
             <h3 class="project-title">.Caster Blog Fullstack App</h3>
           </div>
-          <div class="details">
+          <div class="details slide-in-right">
             <div class="title">technologies:</div>
             <div class="icons-container">
               <img
+                class="tech-icon"
                 src="/assets/icons/react.svg"
                 alt="html5"
                 width="42px"
                 height="42px"
               />
               <img
+                class="tech-icon"
                 src="/assets/icons/css3.svg"
                 alt="css3"
                 width="42px"
                 height="42px"
               />
               <img
+                class="tech-icon"
                 src="/assets/icons/node-js.svg"
                 alt="css3"
                 width="42px"
                 height="42px"
               />
               <img
+                class="tech-icon"
                 src="/assets/icons/mongo.svg"
                 alt="css3"
                 width="42px"
@@ -226,6 +238,7 @@
                 <div class="title">platform:</div>
                 <div class="icons-container">
                   <img
+                    class="tech-icon"
                     src="/assets/icons/netlify.svg"
                     alt="netlify"
                     width="42px"
@@ -237,6 +250,7 @@
                 <div class="title">source code:</div>
                 <div class="icons-container">
                   <img
+                    class="tech-icon"
                     src="/assets/icons/github-1.svg"
                     alt="github"
                     width="42px"
@@ -271,7 +285,7 @@
         </div>
 
         <!-- .CookieCaster Landing Page -->
-        <div class="project">
+        <div class="project fade-in">
           <div class="open-project">
             <div class="project-hover-mobile">
               <p class="paragraph">Go to project -></p>
@@ -292,22 +306,25 @@
             </div>
             <h3 class="project-title">.CasterCookie Landing Page</h3>
           </div>
-          <div class="details">
+          <div class="details slide-in-right">
             <div class="title">technologies:</div>
             <div class="icons-container">
               <img
+                class="tech-icon"
                 src="/assets/icons/html5.svg"
                 alt="html5"
                 width="42px"
                 height="42px"
               />
               <img
+                class="tech-icon"
                 src="/assets/icons/javascript.svg"
                 alt="javascript"
                 width="42px"
                 height="42px"
               />
               <img
+                class="tech-icon"
                 src="/assets/icons/sass.svg"
                 alt="css3"
                 width="42px"
@@ -319,6 +336,7 @@
                 <div class="title">platform:</div>
                 <div class="icons-container">
                   <img
+                    class="tech-icon"
                     src="/assets/icons/netlify.svg"
                     alt="netlify"
                     width="42px"
@@ -330,6 +348,7 @@
                 <div class="title">source code:</div>
                 <div class="icons-container">
                   <img
+                    class="tech-icon"
                     src="/assets/icons/github-1.svg"
                     alt="github"
                     width="42px"
@@ -370,7 +389,7 @@
         </div>
 
         <!-- .CookieCaster App -->
-        <div class="project">
+        <div class="project fade-in">
           <div class="open-project">
             <div class="project-hover-mobile">
               <p class="paragraph">Go to project -></p>
@@ -391,22 +410,25 @@
             </div>
             <h3 class="project-title">.CookieCaster App</h3>
           </div>
-          <div class="details">
+          <div class="details slide-in-right">
             <div class="title">technologies:</div>
             <div class="icons-container">
               <img
+                class="tech-icon"
                 src="/assets/icons/html5.svg"
                 alt="html5"
                 width="42px"
                 height="42px"
               />
               <img
+                class="tech-icon"
                 src="/assets/icons/javascript.svg"
                 alt="javascript"
                 width="42px"
                 height="42px"
               />
               <img
+                class="tech-icon"
                 src="/assets/icons/sass.svg"
                 alt="css3"
                 width="42px"
@@ -418,6 +440,7 @@
                 <div class="title">platform:</div>
                 <div class="icons-container">
                   <img
+                    class="tech-icon"
                     src="/assets/icons/netlify.svg"
                     alt="netlify"
                     width="42px"
@@ -429,6 +452,7 @@
                 <div class="title">source code:</div>
                 <div class="icons-container">
                   <img
+                    class="tech-icon"
                     src="/assets/icons/github-1.svg"
                     alt="github"
                     width="42px"
@@ -467,7 +491,7 @@
         </div>
 
         <!-- .Caster MapsJS project -->
-        <div class="project">
+        <div class="project fade-in">
           <div class="open-project">
             <div class="project-hover-mobile">
               <p class="paragraph">Go to project -></p>
@@ -488,22 +512,25 @@
             </div>
             <h3 class="project-title">MapsJS project</h3>
           </div>
-          <div class="details">
+          <div class="details slide-in-right">
             <div class="title">technologies:</div>
             <div class="icons-container">
               <img
+                class="tech-icon"
                 src="/assets/icons/html5.svg"
                 alt="html5"
                 width="42px"
                 height="42px"
               />
               <img
+                class="tech-icon"
                 src="/assets/icons/javascript.svg"
                 alt="javascript"
                 width="42px"
                 height="42px"
               />
               <img
+                class="tech-icon"
                 src="/assets/icons/css3.svg"
                 alt="css3"
                 width="42px"
@@ -515,6 +542,7 @@
                 <div class="title">platform:</div>
                 <div class="icons-container">
                   <img
+                    class="tech-icon"
                     src="/assets/icons/netlify.svg"
                     alt="netlify"
                     width="42px"
@@ -526,6 +554,7 @@
                 <div class="title">source code:</div>
                 <div class="icons-container">
                   <img
+                    class="tech-icon"
                     src="/assets/icons/github-1.svg"
                     alt="github"
                     width="42px"
@@ -567,7 +596,7 @@
         </div>
 
         <!-- Fylo Landing Page -->
-        <div class="project">
+        <div class="project fade-in">
           <div class="open-project">
             <div class="project-hover-mobile">
               <p class="paragraph">Go to project -></p>
@@ -588,22 +617,25 @@
             </div>
             <h3 class="project-title">Fylo Landing Page</h3>
           </div>
-          <div class="details">
+          <div class="details slide-in-right">
             <div class="title">technologies:</div>
             <div class="icons-container">
               <img
+                class="tech-icon"
                 src="/assets/icons/html5.svg"
                 alt="html5"
                 width="42px"
                 height="42px"
               />
               <img
+                class="tech-icon"
                 src="/assets/icons/javascript.svg"
                 alt="javascript"
                 width="42px"
                 height="42px"
               />
               <img
+                class="tech-icon"
                 src="/assets/icons/sass.svg"
                 alt="css3"
                 width="42px"
@@ -615,6 +647,7 @@
                 <div class="title">platform:</div>
                 <div class="icons-container">
                   <img
+                    class="tech-icon"
                     src="/assets/icons/netlify.svg"
                     alt="netlify"
                     width="42px"
@@ -626,6 +659,7 @@
                 <div class="title">source code:</div>
                 <div class="icons-container">
                   <img
+                    class="tech-icon"
                     src="/assets/icons/github-1.svg"
                     alt="github"
                     width="42px"
@@ -643,7 +677,7 @@
         </div>
 
         <!-- Lalasia Frontend Project -->
-        <div class="project">
+        <div class="project fade-in">
           <div class="open-project">
             <div class="project-hover-mobile">
               <p class="paragraph">Go to project -></p>
@@ -664,22 +698,25 @@
             </div>
             <h3 class="project-title">Lalasia Frontend Project</h3>
           </div>
-          <div class="details">
+          <div class="details slide-in-right">
             <div class="title">technologies:</div>
             <div class="icons-container">
               <img
+                class="tech-icon"
                 src="/assets/icons/html5.svg"
                 alt="html5"
                 width="42px"
                 height="42px"
               />
               <img
+                class="tech-icon"
                 src="/assets/icons/javascript.svg"
                 alt="javascript"
                 width="42px"
                 height="42px"
               />
               <img
+                class="tech-icon"
                 src="/assets/icons/css3.svg"
                 alt="css3"
                 width="42px"
@@ -691,6 +728,7 @@
                 <div class="title">platform:</div>
                 <div class="icons-container">
                   <img
+                    class="tech-icon"
                     src="/assets/icons/netlify.svg"
                     alt="netlify"
                     width="42px"
@@ -702,6 +740,7 @@
                 <div class="title">source code:</div>
                 <div class="icons-container">
                   <img
+                    class="tech-icon"
                     src="/assets/icons/github-1.svg"
                     alt="github"
                     width="42px"
@@ -739,7 +778,7 @@
         </div>
 
         <!-- Loopstudios Landing Page -->
-        <div class="project">
+        <div class="project fade-in">
           <div class="open-project">
             <div class="project-hover-mobile">
               <p class="paragraph">Go to project -></p>
@@ -760,22 +799,25 @@
             </div>
             <h3 class="project-title">Loopstudios Landing Page</h3>
           </div>
-          <div class="details">
+          <div class="details slide-in-right">
             <div class="title">technologies:</div>
             <div class="icons-container">
               <img
+                class="tech-icon"
                 src="/assets/icons/html5.svg"
                 alt="html5"
                 width="42px"
                 height="42px"
               />
               <img
+                class="tech-icon"
                 src="/assets/icons/javascript.svg"
                 alt="javascript"
                 width="42px"
                 height="42px"
               />
               <img
+                class="tech-icon"
                 src="/assets/icons/sass.svg"
                 alt="css3"
                 width="42px"
@@ -787,6 +829,7 @@
                 <div class="title">platform:</div>
                 <div class="icons-container">
                   <img
+                    class="tech-icon"
                     src="/assets/icons/netlify.svg"
                     alt="netlify"
                     width="42px"
@@ -798,6 +841,7 @@
                 <div class="title">source code:</div>
                 <div class="icons-container">
                   <img
+                    class="tech-icon"
                     src="/assets/icons/github-1.svg"
                     alt="github"
                     width="42px"
@@ -852,5 +896,6 @@
     </footer>
     <script src="/scripts/menuHandler.js"></script>
     <script src="/scripts/moreHandler.js"></script>
+    <script src="/scripts/animations.js"></script>
   </body>
 </html>

@@ -1,0 +1,52 @@
+@keyframes slideInRightAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeftAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInMenu {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.slide-in-right {
+  animation: slideInRightAnimation ease-out 1s;
+}
+
+.slide-in-left {
+  animation: slideInLeftAnimation ease-out 1s;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.fade-in.appear {
+  opacity: 1;
+  transform: translateY(-20px);
+}
+
+.slide-in-menu {
+  animation: slideInMenu ease-in 0.6s;
+}
