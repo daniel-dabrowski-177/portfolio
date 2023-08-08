@@ -9,7 +9,8 @@
         "../../layout/_navbar.scss",
         "../../layout/_about.scss",
         "../../layout/_projects.scss",
-        "../../layout/_footer.scss"
+        "../../layout/_footer.scss",
+        "../../layout/_other.scss"
     ],
     "names": [],
     "file": "styles.css"
