@@ -20,6 +20,16 @@
   }
 }
 
+@keyframes slideUpAnimation {
+  0% {
+    transform: translateY(6px);
+  }
+  100% {
+    transform: translateY(0);
+    color: $clr-accent;
+  }
+}
+
 @keyframes slideInMenu {
   0% {
     transform: translateX(100%);
@@ -35,6 +45,10 @@
 
 .slide-in-left {
   animation: slideInLeftAnimation ease-out 1s;
+}
+
+.slide-up {
+  animation: slideUpAnimation ease-out 1s;
 }
 
 .fade-in {

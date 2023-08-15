@@ -65,7 +65,7 @@ ul.children[1].addEventListener("click", () => {
 });
 
 // Contact click handler
-ul.children[2].addEventListener("click", () => {
+ul.children[3].addEventListener("click", () => {
   footer.scrollIntoView({
     behavior: "smooth",
   });
